@@ -21,8 +21,11 @@
 // }
 
 
-let source = [1, 2, 3, 4, 5];
-let itemsToRemove = [1, 3];
+// let source = [1, 2, 3, 4, 5];
+// let itemsToRemove = [1, 3];
+
+let source = ["hello", "world"];
+let itemsToRemove = ["hello"];
 
 function without(source, itemsToRemove) {
   let result = [];
