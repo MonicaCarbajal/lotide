@@ -32,4 +32,4 @@ function letterPositions(sentence) {
 
 const result = letterPositions("hello");
 
-assertArrayEqual(result.e, [1]);
+assertArrayEqual(result.o, [4]);
