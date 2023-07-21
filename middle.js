@@ -1,20 +1,17 @@
 const assertEqual = require('./assertEqual');
 const eqArrays = require('./eqArrays');
 
-
-
-// ACTUAL FUNCTION
-function middle(arrayForMiddle) {
-  const length = arrayForMiddle.length;
-  if (length <= 2) {
-    return [];
-  } else if (length % 2 === 0) {
-    const midIndex = length / 2;
-    return [arrayForMiddle[midIndex - 1], arrayForMiddle[midIndex]];
-  } else {
-    const midIndex = Math.floor(length / 2);
-    return [arrayForMiddle[midIndex]];
-  }
-}
+const middle = function(array) {
+    const length = array.length;
+    const middleIndex = Math.floor(length / 2);
+  
+    if (length % 2 === 0) {
+      // Array length is even, return two middle elements
+      return [array[middleIndex - 1], array[middleIndex]];
+    } else {
+      // Array length is odd, return middle element
+      return array[middleIndex];
+    }
+  };
 
 module.exports = middle;

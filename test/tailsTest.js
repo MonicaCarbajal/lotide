@@ -1,9 +1,28 @@
+const assert = require('chai').assert;
 const tail = require('../tails');
-const assertEqual = require('../assertEqual');
+// const eqArrays = require('../eqArrays');
+// const assertEqual = require('../assertEqual');
 
-// TEST CODE
+// // TEST CODE
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
+// const result = tail(["Hello", "Lighthouse", "Labs"]);
 
-assertEqual(result.length, 2);
-assertEqual(result[1], "Labs");
+describe('tail', () => {
+  it('should return the tail of an array', () => {
+    const result = tail(["Hello", "Lighthouse", "Labs"]);
+    assert.deepEqual(result, ["Lighthouse", "Labs"]);
+  });
+
+
+  it('should return an array of length 2', () => {
+    const result = tail(["Hello", "Lighthouse", "Labs"]);
+    assert.strictEqual(result.length, 2);
+  });
+
+
+  it('should return an empty array for an empty input array', () => {
+    const result = tail([]);
+    assert.deepEqual(result, []);
+  });
+});
+
