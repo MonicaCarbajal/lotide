@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-const tail = require('../tails');
+const tail = require('../tail');
 // const eqArrays = require('../eqArrays');
 // const assertEqual = require('../assertEqual');
 
