@@ -17,7 +17,7 @@ const assertArrayEqual = function(array1, array2) {
   } else {
     console.log(`🛑 False: ${array1} is not equal to ${array2}`);
   }
-}
+};
 
 
 const takeUntil = function(array, callback) {

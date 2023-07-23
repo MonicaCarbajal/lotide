@@ -8,7 +8,7 @@ const assertArrayEqual = function(array1, array2) {
   } else {
     console.log(`🛑 False: ${array1} is not equal to ${array2}`);
   }
-}
+};
 
 console.log(assertArrayEqual([12, 34, 56], [12, 34, 56]));
 

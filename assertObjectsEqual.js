@@ -22,7 +22,7 @@ const assertEqual = function(actual, expected) {
   } else {
     console.log(`🛑 False: ${actual} !== ${expected}`);
   }
-}
+};
 
 
 
@@ -34,14 +34,14 @@ const assertObjectsEqual = function(actual, expected) {
   } else {
     console.log(`🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
-}
+};
 
 const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject= { size: "medium", color: "red" };
+const anotherShirtObject = { size: "medium", color: "red" };
 eqObjects(shirtObject , anotherShirtObject); // => true
 
 assertObjectsEqual(eqObjects(shirtObject , anotherShirtObject), true);
 
-const longSleeveShirtObject= { size: "medium", color: "red", sleeveLength: "long" };
+const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
 eqObjects(shirtObject , longSleeveShirtObject); // => false
 assertObjectsEqual(eqObjects(shirtObject , longSleeveShirtObject), false);
